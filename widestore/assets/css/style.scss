@@ -1,0 +1,223 @@
+/*==============================================================*
+    Template Name:  Wide Store - HTML5 eCommerce template
+    Version:        1.0.0
+    Author:         Md Mahabub Alam (@mahabubdev)
+    Author-URL:     https://mahabubdev.github.io/
+*==============================================================*/
+
+
+
+/*--- Root CSS ---*/
+:root {
+    --bg-color: #ffffff;
+    --bg-color-2: #F5F5F5;
+    --bg-th-color2: #F9F9F9;
+
+    --txt-color: #484848;
+    --txt-color-2: #a1a1a1;
+    --txt-color-gy: #E5E5E5;
+
+    --darkish: #484848;
+    --th-dark: #161c1e;
+    --th-darkish: #363636;
+    --org-deep: #F28C2B;
+    --th-blue: #156CDA;
+    --th-blue-2: #237cea;
+    --th-red: #EC4222;
+    --th-yellow: #FDD838;
+}
+
+
+
+/*--- Reset CSS ---*/
+a {
+    text-decoration: none;
+    &:hover {text-decoration: none;}
+}
+
+ul {padding-left: 0;}
+
+ul, li {
+    list-style: none;
+}
+
+/*--- Global CSS ---*/
+*, body, .page_wrappper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    font-family: 'Open Sans', sans-serif;
+    //font-family: 'Nunito', sans-serif;
+}
+
+
+// chevrons
+i.lni {
+    font-size: .7rem;
+    color: var(--txt-color-2);
+}
+
+// drop-menu
+li {position: relative;}
+.drop-menu {
+    border: 1px solid var(--txt-color-gy);
+
+    li {
+        border-right: 0;
+        border-bottom: 1px solid var(--txt-color-gy);
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    display: flex;
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    min-width: 100%;
+    transition: all .2s ease-in;
+    border-radius: .125rem;
+    -webkit-border-radius: .125rem;
+    -moz-border-radius: .125rem;
+    -ms-border-radius: .125rem;
+    -o-border-radius: .125rem;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+}
+li:hover > .drop-menu {
+    visibility: visible;
+    height: auto;
+    padding: 2rem 1rem;
+    animation: dropmenu 1s;
+}
+@keyframes dropmenu {
+    from {
+        top: calc(100% + .5rem);
+        opacity: 0.4;
+    }
+    to {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
+
+/*--- Header CSS ---*/
+.header_area {
+    margin: 0;
+    padding: 0;
+
+    // header_topbar
+    .header_top {
+        background-color: var(--bg-color);
+        border-bottom: 1px solid var(--bg-th-color2);
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid var(--txt-color-gy);
+
+        a {
+            font-size: .75rem;
+            color: var(--th-darkish);
+            text-transform: capitalize;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 .5rem;
+            padding: 0;
+            transition: all .25s ease-in;
+            -webkit-transition: all .25s ease-in;
+            -moz-transition: all .25s ease-in;
+            -ms-transition: all .25s ease-in;
+            -o-transition: all .25s ease-in;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                cursor: pointer;
+                padding: 0 .45rem;
+                margin: 0;
+                a {padding: .5rem 0;}
+                &:hover {
+                    a, i {
+                        color: var(--th-blue-2);
+                    }
+                }
+            }
+        }
+
+        // topbar_support
+        .topbar_support {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 0;
+
+            li {
+                border-right: 1px solid var(--txt-color-gy);
+                &:last-child {
+                    border-right: 0;
+                }
+            }
+        }
+
+        //topbar_info
+        .topbar_info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 .5rem;
+        }
+
+
+        //topbar_options
+        .topbar_options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            justify-self: flex-end;
+            align-items: center;
+            gap: 0;
+
+            li {
+                display: inline-flex;
+                align-items: center;
+                gap: 0 .4rem;
+                border-right: 1px solid var(--txt-color-gy);
+                &:last-child {
+                    border-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/*--- Root CSS ---*/
+
+/*--- Root CSS ---*/
+
+/*--- Root CSS ---*/
+
+/*--- Root CSS ---*/
+
+/*--- Root CSS ---*/
+
+/*--- Root CSS ---*/
+
+/*--- Root CSS ---*/
