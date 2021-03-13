@@ -108,8 +108,8 @@ li:hover > .drop-menu {
 
 @-webkit-keyframes dropmenu {
   from {
-    top: calc(100% + .5rem);
-    opacity: 0.4;
+    top: calc(100% + 1rem);
+    opacity: 0.7;
   }
   to {
     top: 100%;
@@ -119,8 +119,8 @@ li:hover > .drop-menu {
 
 @keyframes dropmenu {
   from {
-    top: calc(100% + .5rem);
-    opacity: 0.4;
+    top: calc(100% + 1rem);
+    opacity: 0.7;
   }
   to {
     top: 100%;
@@ -136,10 +136,10 @@ li:hover > .drop-menu {
 
 .header_area .header_top {
   background-color: var(--bg-color);
-  border-bottom: 1px solid var(--bg-th-color2);
   padding: 0;
   margin: 0;
   border-bottom: 1px solid var(--txt-color-gy);
+  gap: 0;
 }
 
 .header_area .header_top a {
