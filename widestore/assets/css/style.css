@@ -53,7 +53,12 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-i.lni {
+.has-drop i.lni {
+  font-size: .5rem;
+  color: var(--txt-color-2);
+}
+
+.has-drop span.lni {
   font-size: .7rem;
   color: var(--txt-color-2);
 }
@@ -118,8 +123,8 @@ li {
 li:hover > .drop-menu {
   visibility: visible;
   height: auto;
-  -webkit-animation: dropmenu 1s;
-          animation: dropmenu 1s;
+  animation: dropmenu .5s;
+  -webkit-animation: dropmenu .5s;
 }
 
 @-webkit-keyframes dropmenu {

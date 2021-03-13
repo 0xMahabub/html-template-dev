@@ -57,9 +57,15 @@ body {
 
 
 // chevrons
-i.lni {
-    font-size: .7rem;
-    color: var(--txt-color-2);
+.has-drop {
+    i.lni {
+        font-size: .5rem;
+        color: var(--txt-color-2);
+    }
+    span.lni {
+        font-size: .7rem;
+        color: var(--txt-color-2);
+    }
 }
 
 // drop-menu
@@ -110,7 +116,8 @@ li {position: relative;}
 li:hover > .drop-menu {
     visibility: visible;
     height: auto;
-    animation: dropmenu 1s;
+    animation: dropmenu .5s;
+    -webkit-animation: dropmenu .5s;
 }
 @keyframes dropmenu {
     from {
