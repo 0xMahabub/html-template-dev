@@ -66,12 +66,25 @@ i.lni {
 li {position: relative;}
 .drop-menu {
     border: 1px solid var(--txt-color-gy);
+    padding: 0 !important;
 
     li {
         border-right: 0;
+        padding: 0 !important;
         border-bottom: 1px solid var(--txt-color-gy);
         &:last-child {
             border-bottom: 0;
+        }
+
+        a {
+            display: flex;
+            justify-content: flex-start !important;
+            width: 100%;
+            padding: .5rem 0 .5rem .5rem !important;
+        }
+
+        &:hover > a {
+            background-color: var(--bg-th-color2);
         }
     }
 
@@ -97,7 +110,6 @@ li {position: relative;}
 li:hover > .drop-menu {
     visibility: visible;
     height: auto;
-    padding: 2rem 1rem;
     animation: dropmenu 1s;
 }
 @keyframes dropmenu {

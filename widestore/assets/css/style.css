@@ -64,6 +64,7 @@ li {
 
 .drop-menu {
   border: 1px solid var(--txt-color-gy);
+  padding: 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,6 +92,7 @@ li {
 
 .drop-menu li {
   border-right: 0;
+  padding: 0 !important;
   border-bottom: 1px solid var(--txt-color-gy);
 }
 
@@ -98,10 +100,24 @@ li {
   border-bottom: 0;
 }
 
+.drop-menu li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  width: 100%;
+  padding: .5rem 0 .5rem .5rem !important;
+}
+
+.drop-menu li:hover > a {
+  background-color: var(--bg-th-color2);
+}
+
 li:hover > .drop-menu {
   visibility: visible;
   height: auto;
-  padding: 2rem 1rem;
   -webkit-animation: dropmenu 1s;
           animation: dropmenu 1s;
 }
