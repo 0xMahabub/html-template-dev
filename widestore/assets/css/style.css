@@ -149,6 +149,21 @@ li:hover > .drop-menu {
   }
 }
 
+.logo {
+  max-width: 100%;
+  width: auto;
+  max-height: 2.5rem;
+  font-size: 2rem;
+  color: white;
+  text-transform: lowercase;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--th-yellow);
+  padding-left: .25rem;
+}
+
 /*--- Header CSS ---*/
 .header_area {
   margin: 0;
@@ -161,6 +176,7 @@ li:hover > .drop-menu {
   margin: 0;
   border-bottom: 1px solid var(--txt-color-gy);
   gap: 0;
+  z-index: 9;
 }
 
 .header_area .header_top a {
@@ -252,6 +268,7 @@ li:hover > .drop-menu {
       -ms-flex-align: center;
           align-items: center;
   gap: 0;
+  z-index: 9;
 }
 
 .header_area .header_top .topbar_options li {
@@ -262,11 +279,204 @@ li:hover > .drop-menu {
       -ms-flex-align: center;
           align-items: center;
   gap: 0 .4rem;
+  z-index: 9;
+  background-color: white;
   border-right: 1px solid var(--txt-color-gy);
 }
 
 .header_area .header_top .topbar_options li:last-child {
   border-right: 0;
+}
+
+.header_area .header_main {
+  background-color: var(--th-blue);
+  color: white;
+  min-height: 2.5rem;
+}
+
+.header_area .header_main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 2.5rem;
+}
+
+.header_area .header_main .container .row {
+  margin-left: 0;
+}
+
+.header_area .header_main .logo_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.5rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.header_area .header_main .search_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header_area .header_main .search_area .search_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.5rem;
+}
+
+.header_area .header_main .search_area .search_bar select {
+  text-transform: capitalize;
+  padding: 0 1rem !important;
+  height: 2.5rem;
+  width: 150px;
+  margin-right: .4rem;
+  border: 1px solid var(--th-blue-2);
+  background-color: var(--th-blue-2);
+  color: white;
+  border-radius: .25rem;
+  font-size: .85rem;
+}
+
+.header_area .header_main .search_area .search_bar select::-webkit-scrollbar {
+  background-color: var(--txt-color-gy);
+  width: .35rem;
+}
+
+.header_area .header_main .search_area .search_bar select:active, .header_area .header_main .search_area .search_bar select:focus {
+  border: 0;
+  outline: 0;
+}
+
+.header_area .header_main .search_area .search_bar select option {
+  display: block;
+  background-color: var(--bg-color-2);
+  color: var(--txt-color);
+}
+
+.header_area .header_main .search_area .search_bar input {
+  margin-right: .4rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+  width: 320px;
+  border: 1px solid var(--th-blue);
+  border-radius: .25rem;
+}
+
+.header_area .header_main .search_area .search_bar input:active, .header_area .header_main .search_area .search_bar input:focus {
+  border: 0;
+  outline: 0;
+  border: 1px solid var(--th-blue);
+}
+
+.header_area .header_main .search_area .search_bar .btn-search {
+  background-color: var(--th-blue-2);
+  color: white;
+  border: 0;
+  outline: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+}
+
+.header_area .header_main .shop_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0 1rem;
+  margin: 0;
+}
+
+.header_area .header_main .shop_btns li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .85rem;
+  background-color: var(--th-blue-2);
+  color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.header_area .header_main .shop_btns li a .bdg {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  top: -.125rem;
+  right: -.4rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--th-red);
+  font-size: .7rem;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 /*--- Root CSS ---*/
