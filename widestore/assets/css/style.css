@@ -13,10 +13,10 @@
   --txt-color-2: #a1a1a1;
   --txt-color-gy: #E5E5E5;
   --darkish: #484848;
-  --th-dark: #161c1e;
+  --th-dark: #1d1d1d;
   --th-darkish: #363636;
   --org-deep: #F28C2B;
-  --th-blue: #156CDA;
+  --th-blue: #146cda;
   --th-blue-2: #237cea;
   --th-blue-lt: #eff6ff;
   --th-red: #EC4222;
@@ -150,18 +150,23 @@ li:hover > .drop-menu {
   }
 }
 
+.py-th-3 {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
 .logo {
   max-width: 100%;
   width: auto;
   max-height: 2.5rem;
   font-size: 2rem;
-  color: white;
+  color: var(--th-dark);
   text-transform: lowercase;
   font-weight: 700;
 }
 
 .logo span {
-  color: var(--th-yellow);
+  color: var(--th-blue-2);
   padding-left: .25rem;
 }
 
@@ -172,7 +177,7 @@ li:hover > .drop-menu {
 }
 
 .header_area .header_top {
-  background-color: var(--th-blue-lt);
+  background-color: var(--bg-th-color2);
   padding: 0;
   margin: 0;
   border-bottom: 1px solid var(--txt-color-gy);
@@ -270,7 +275,7 @@ li:hover > .drop-menu {
           align-items: center;
   gap: 0;
   z-index: 9;
-  background-color: var(--th-blue-lt);
+  background-color: var(--bg-th-color2);
 }
 
 .header_area .header_top .topbar_options li {
@@ -282,7 +287,7 @@ li:hover > .drop-menu {
           align-items: center;
   gap: 0 .4rem;
   z-index: 9;
-  background-color: var(--th-blue-lt);
+  background-color: var(--bg-th-color2);
   border-right: 1px solid var(--txt-color-gy);
 }
 
@@ -291,8 +296,8 @@ li:hover > .drop-menu {
 }
 
 .header_area .header_main {
-  background-color: var(--th-blue);
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--th-dark);
   min-height: 2.5rem;
 }
 
@@ -411,11 +416,20 @@ li:hover > .drop-menu {
   outline: 0;
   height: 2.5rem;
   width: 2.5rem;
+  transition: all .25s ease-in;
   border-radius: .25rem;
   -webkit-border-radius: .25rem;
   -moz-border-radius: .25rem;
   -ms-border-radius: .25rem;
   -o-border-radius: .25rem;
+  -webkit-transition: all .25s ease-in;
+  -moz-transition: all .25s ease-in;
+  -ms-transition: all .25s ease-in;
+  -o-transition: all .25s ease-in;
+}
+
+.header_area .header_main .search_area .search_bar .btn-search:hover {
+  background-color: var(--th-dark);
 }
 
 .header_area .header_main .shop_btns {
@@ -447,13 +461,19 @@ li:hover > .drop-menu {
       -ms-flex-align: center;
           align-items: center;
   padding: .85rem;
-  background-color: var(--th-blue-2);
-  color: white;
+  background-color: transparent;
+  color: var(--th-blue-2);
+  border: 1px solid var(--th-blue-2);
+  transition: all .25s;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -ms-transition: all .25s;
+  -o-transition: all .25s;
 }
 
 .header_area .header_main .shop_btns li a .bdg {
@@ -465,10 +485,10 @@ li:hover > .drop-menu {
   right: -.4rem;
   width: 1.25rem;
   height: 1.25rem;
-  background-color: var(--th-yellow);
+  background-color: var(--th-blue-2);
   font-size: .8rem;
   font-weight: 600;
-  color: var(--th-dark);
+  color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -480,6 +500,131 @@ li:hover > .drop-menu {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+.header_area .header_main .shop_btns li a:hover {
+  background-color: var(--th-blue-2);
+  color: white;
+}
+
+.header_area .header_menubar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--th-blue);
+  color: white;
+  height: 3rem;
+}
+
+.header_area .header_menubar .category_menu {
+  position: relative;
+  height: 100%;
+}
+
+.header_area .header_menubar .category_menu .cat_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0 .35rem;
+  height: 100%;
+}
+
+.header_area .header_menubar .category_menu .cat_menu .btn-catmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 200px;
+  padding: 0;
+  height: 2.5rem;
+  gap: 0 .5rem;
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header_area .header_menubar .category_menu .cat_menu .has-drop .lni {
+  font-size: .85rem;
+  color: white;
+}
+
+.header_area .header_menubar .category_menu .cat_menu .has-drop .lni:first-child {
+  background-color: var(--th-blue-2);
+  padding: .65rem;
+  border-radius: .2rem;
+  -webkit-border-radius: .2rem;
+  -moz-border-radius: .2rem;
+  -ms-border-radius: .2rem;
+  -o-border-radius: .2rem;
+}
+
+.header_area .header_menubar .category_menu .cat_menu .has-drop .lni:last-child {
+  font-size: .65rem;
+  color: var(--txt-color-gy);
+}
+
+.header_area .header_menubar .primary_menu_area .primary_menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 2.5rem;
+}
+
+.header_area .header_menubar .primary_menu_area .primary_menu li {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header_area .header_menubar .primary_menu_area .primary_menu li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  color: white;
+  gap: 0 .6rem;
+  text-transform: capitalize;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.header_area .header_menubar .primary_menu_area .primary_menu li a.has-drop .lni {
+  color: var(--txt-color-gy);
 }
 
 /*--- Root CSS ---*/
